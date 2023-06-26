@@ -17,6 +17,7 @@ class CelebrationList
 		CelebrationList();
 		void appendNode(string);
 		bool searchNode(string);
+		void celebrationGame(int&);
 };
 
 #endif
