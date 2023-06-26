@@ -25,6 +25,40 @@ Overall, the game provides an interactive and challenging word puzzle experience
 
 # How to play your game.
 
+1. Start the game by running the program.
+   
+2. The program will display a prompt asking if you want to start the game. Enter "Y" or "y" and press Enter to indicate that you want to play.
+
+3. The game will begin with the Kingdom of Food. A 10x10 grid of letters will appear on the screen, representing the word search for this kingdom.
+
+4. Your task is to find specific words hidden within the word search grid. The words will be related to food. For example, you may find words like "apples," "pizza," and "rice."
+
+5. The puzzle grid is presented and you will have 0ptions to choose between two actions:
+Enter 1: Guess the word directly. Enter the word you think is hidden within the grid and press Enter.
+Enter 2: Get a hint first. The game will provide a hint by providing information about the size of the hidden word.
+
+7. If you guess the word correctly, a congratulatory message is displayed, and the you can earn 2 points. Otherwise, an incorrect message is shown, and the correct word is revealed. You can gain maximum 10 points for each kingdom.
+
+8. Repeat steps 3-7 for a total of five word searches in the Kingdom of Food. 
+
+9. Once you guessed all five words in the Kingdom of Food, no matter your guesses are correct or not, you will automatically proceed to the next kingdom, which is the Kingdom of Country.
+
+10. The gameplay in the Kingdom of Country is similar to the previous kingdom. A new 10x10 grid of letters will appear on the screen, and you need to find five words related to the country theme.
+
+11. Repeat steps 3-7 for a total of five word searches in the Kingdom of Country. Guess all five words to advance to the final kingdom which will be the Kingdom of Country.
+
+12. After completing the Kingdom of Country, you will move on to the Kingdom of Celebrations.
+
+13. The Kingdom of Celebrations will present you with another set of five word searches, this time with a celebration theme. Again, try to find and guess the words.
+
+14. Repeat steps 3-7 once again for all the word searches in the Kingdom of Celebrations.
+
+15. Once you have guessed all five words in the Kingdom of Celebrations, your total marks will be revealed.
+
+Remember, in order to save the princess, you must obtain 10 or more than 10 marks. You are considered failed to save the princess if your total marks end up being less than 10.
+
+bonus round iruntha tambah pandren guysssss
+
 # How object-oriented concepts were used to develop your game
 
 # How linked lists/stacks/queues play a role in your game.
