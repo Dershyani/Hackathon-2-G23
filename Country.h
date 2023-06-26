@@ -17,6 +17,7 @@ class CountryList
 		CountryList();
 		void appendNode(string);
 		bool searchNode(string);
+		void countryGame(int&);
 };
 
 #endif
