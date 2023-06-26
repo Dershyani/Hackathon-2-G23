@@ -17,6 +17,7 @@ class FoodList
 		FoodList();
 		void appendNode(string);
 		bool searchNode(string);
+		void foodGame(int&);
 };
 
 #endif
