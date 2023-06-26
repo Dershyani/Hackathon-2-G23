@@ -1,7 +1,8 @@
 # Hackathon-2-G23
 
 # Description of your game
-The game Save the Princess was created using the C++ programming language. We implemented a word search in this game. Basically, this game is about rescuing a princess. To save the princess, you must navigate through three kingdoms which are the Kingdom of Food, the Kingdom of Country, and the Kingdom of Celebrations. The word search is carefully design to each kingdom's theme, drawing players into an immersive experience. For example, in Food Kingdom, players may encounter word searches containing food-related words such as "apples", "pizza", and "rice". In each kingdom there are 5-word search and must search for a word in each word search. Upon reaching the first kingdom, the Food Kingdom, a 10x10 grid of letters will appear and the player must find the hidden words. This process is repeated for each kingdom. The player has two options. They can guess the word directly or get a hint first and then guess the word. When the players guessed the word correctly, they will obtain scores. The player must obtain a minimum of 10 points by correctly guessing the words in the word searches in order to win the game and save the princess.//CAN ADD BONUS PART HERE IF GOT
+The game Save the Princess was created using the C++ programming language. We implemented a word search in this game. Basically, this game is about rescuing a princess. To save the princess, you must navigate through three kingdoms which are the Kingdom of Food, the Kingdom of Country, and the Kingdom of Celebrations. The word search is carefully design to each kingdom's theme, drawing players into an immersive experience. For example, in Food Kingdom, players may encounter word searches containing food-related words such as "apples", "pizza", and "rice". In each kingdom there are 5-word search and must search for a word in each word search. Upon reaching the first kingdom, the Food Kingdom, a 10x10 grid of letters will appear and the player must find the hidden words. This process is repeated for each kingdom. The player has two options. They can guess the word directly or get a hint first and then guess the word. When the players guessed the word correctly, they will obtain scores. The player must obtain a minimum of 25 points by correctly guessing the words in the word searches in order to win the game and save the princess.
+
 # Features of your game
 There are many features contain in the game that we created:
 
@@ -43,7 +44,7 @@ Enter 2: Get a hint first. The game will provide a hint by providing information
 
 10. The gameplay in the Kingdom of Country is similar to the previous kingdom. A new 10x10 grid of letters will appear on the screen, and you need to find five words related to the country theme.
 
-11. Repeat steps 3-7 for a total of five word searches in the Kingdom of Country. Guess all five words to advance to the final kingdom which will be the Kingdom of Country.
+11. Repeat steps 3-7 for a total of five word searches in the Kingdom of Country. Guess all five words to advance to the final kingdom which will be the Kingdom of Celebration.
 
 12. After completing the Kingdom of Country, you will move on to the Kingdom of Celebrations.
 
@@ -53,9 +54,7 @@ Enter 2: Get a hint first. The game will provide a hint by providing information
 
 15. Once you have guessed all five words in the Kingdom of Celebrations, your total marks will be revealed.
 
-Remember, in order to save the princess, you must obtain 10 or more than 10 marks. You are considered failed to save the princess if your total marks end up being less than 10.
-
-bonus round iruntha tambah pandren guysssss
+Remember, in order to save the princess, you must obtain 25 or more than 25 marks. You are considered failed to save the princess if your total marks end up being less than 25.
 
 # How object-oriented concepts were used to develop your game
 
