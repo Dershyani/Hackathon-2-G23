@@ -1,4 +1,5 @@
 #include "Food.h"
+#include <windows.h>
 #include <iostream>
 using namespace std;
 
@@ -56,4 +57,93 @@ bool FoodList::searchNode(string guess)
 	}
 	return false;
 	
+}
+
+void FoodList::foodGame(int& scores)
+{
+	string a_food[5] = { "apple","pizza","sandwich","chicken","rice" };
+	    char arr_food[10][10];
+		
+		for(int x=5; x>0; x--)
+		{
+		    for (int i = 0; i < 10; i++) {
+		        for (int j = 0; j < 10; j++) {
+		            char c;
+		            int r;
+		            r = rand() % 26;   // generate a random number
+		            c = 'a' + r;            // Convert to a character from a-z
+		            arr_food[i][j] = c;
+		        }
+		    }
+			
+			int f_index = rand()%x;
+			string output = a_food[f_index];
+		    
+		    if (a_food[f_index].length() % 2 == 0) {
+		        // for even string length case
+		        int row = rand() % 10;
+		        int col = rand() % 3;
+		        for (int i = 0; a_food[f_index][i] != '\0'; i++, col++) {
+		            arr_food[row][col] = a_food[f_index][i];
+		        }
+		    }
+		    else {
+		        // for odd string length case
+		        int row = rand() % 3;
+		        int col = rand() % 10;
+		        for (int i = 0; a_food[f_index][i] != '\0'; i++, row++) {
+		            arr_food[row][col] = a_food[f_index][i];
+		        }
+		    }
+		
+		    for (int i = 0; i < 10; i++) {
+		        for (int j = 0; j < 10; j++) {
+		            cout << " " << arr_food[i][j];
+		            Sleep(90);
+		        }
+		        cout << endl;
+		    }
+		
+		    string guess;
+		    int hint;
+	        cout << "Press 1 for Guess" << endl;
+		    cout << "Press 2 for see Hint and then guess" << endl;
+		    cout << "Enter input		:	";
+		    cin >> hint;
+		    cout << endl;
+		
+		    if (hint == 1) {
+		        cout << "Enter word you guess         :       ";
+		        cin.ignore();  // Ignore any previous newline character in the input buffer
+		        getline(cin, guess);
+		    }
+		    else if (hint == 2) {
+		        cout << "Guessed word in puzzle size is  :       ";
+		        cout << output.size();
+		        cout << endl;
+		        cout << "Enter word you guess         :       ";
+		        cin.ignore();  // Ignore any previous newline character in the input buffer
+		        getline(cin, guess);
+		    }
+		    else {
+		        cout << "Invalid input	";
+		        break;  // Exit the function since the input is invalid
+		    }
+		
+		    cout << endl;
+		    if (searchNode(guess)) 
+			{
+		        cout << "Congratulations! You have guessed the correct word." << endl;
+		        scores += 2;
+		    }
+		    else {
+		        cout << "Wrong guess. The correct word was: " << output << endl;
+		    }
+		    cout << endl;
+		    while(f_index<x-1)
+		    {
+		    	a_food[f_index] = a_food[f_index+1];
+		    	f_index++;
+			}
+		}
 }
