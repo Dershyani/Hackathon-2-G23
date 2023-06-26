@@ -33,7 +33,7 @@ Overall, the game provides an interactive and challenging word puzzle experience
 
 4. Your task is to find specific words hidden within the word search grid. The words will be related to food. For example, you may find words like "apples," "pizza," and "rice."
 
-5. The puzzle grid is presented and you will have 0ptions to choose between two actions:
+5. The puzzle grid is presented and you will have options to choose between two actions:
 Enter 1: Guess the word directly. Enter the word you think is hidden within the grid and press Enter.
 Enter 2: Get a hint first. The game will provide a hint by providing information about the size of the hidden word.
 
