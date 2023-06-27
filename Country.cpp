@@ -1,4 +1,4 @@
-#include "Country.h"
+#include "CountryL.h"
 #include <windows.h>
 #include <iostream>
 using namespace std;
@@ -62,7 +62,7 @@ void CountryList::countryGame(int& scores)
 	string a_country[5] = { "malaysia","america","japan","india","china" };
 	    char arr_country[10][10];
 		int c_index = 0;
-		for(int b=0; b<5; b++)
+		for(int x=5; x>0; x--)
 		{
 		    for (int i = 0; i < 10; i++) {
 		        for (int j = 0; j < 10; j++) {
