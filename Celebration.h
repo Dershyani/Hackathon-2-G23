@@ -1,6 +1,6 @@
 #include <iostream>
-#ifndef CELEBRATIONL_H
-#define CELEBRATIONL_H
+#ifndef CELEBRATION_H
+#define CELEBRATION_H
 #include <string>
 using namespace std;
 
