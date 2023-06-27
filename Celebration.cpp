@@ -1,4 +1,4 @@
-#include "Celebration.h"
+#include "CelebrationL.h"
 #include <windows.h>
 #include <iostream>
 
@@ -62,10 +62,10 @@ bool CelebrationList::searchNode(string guess)
 
 void CelebrationList::celebrationGame(int& scores)
 {
-	string a_celebration[5] = { "raya","deepavali","ponggal","thaipusam","christmas" };
+	string a_celebration[5] = { "raya","diwali","vesak","holi","easter" };
 	    char arr_celebration[10][10];
 		int cl_index = 0;
-		for(int b=0; b<5; b++)
+		for(int x=5; x>0; x--)
 		{
 		    for (int i = 0; i < 10; i++) {
 		        for (int j = 0; j < 10; j++) {
