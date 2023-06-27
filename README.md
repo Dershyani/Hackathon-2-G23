@@ -57,6 +57,27 @@ Enter 2: Get a hint first. The game will provide a hint by providing information
 Remember, in order to save the princess, you must obtain 25 or more than 25 marks. You are considered failed to save the princess if your total marks end up being less than 25.
 
 # How object-oriented concepts were used to develop your game
+Each of the kingdom was developed using classes, which is an object-oriented concept.Here's a breakdown of how these concepts were used:
+
+Encapsulation: Within the boundaries of its scope, each class encapsulates its own data and behaviour. In order to protect data integrity and abstraction, the private member variables (ListNode* head) are shielded from external access. Access to the data can be regulated using public member functions.
+
+Abstraction: Each class abstracts a particular aspect or idea associated to the game, such as celebrations, food, or countries. The user only interacts with the public interfaces that the classes' public interfaces give, therefore they are concealed from them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # How linked lists/stacks/queues play a role in your game.
 
