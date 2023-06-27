@@ -73,14 +73,7 @@ Abstraction: Each class abstracts a particular aspect or idea associated to the 
 
 
 
-
-
-
-
-
-
 # How linked lists/stacks/queues play a role in your game.
 
-# Screenshots of your game
+# Link to game demo video & Screenshots of game
 
-# A link to your game demo video
