@@ -1,6 +1,6 @@
 #include <iostream>
-#ifndef COUNTRY_H
-#define COUNTRY_H
+#ifndef COUNTRYL_H
+#define COUNTRYL_H
 #include <string>
 using namespace std;
 
