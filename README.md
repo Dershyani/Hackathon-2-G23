@@ -79,6 +79,6 @@ We used linked lists to develop our game.Linked list was used in **"CelebrationL
 3)Game Implementation: The **celebrationGame**,**foodGame** and **countryGame** function implements a game using a linked list.To illustrate,it produces the 10x10 character array **arr_celebration**, which is randomly composed of lowercase letters. The names of the celebrations are then concealed inside this array. The player must determine the celebration's name after being presented with the array as a riddle by the function.The names of the celebrations (a_celebration) are kept distinct and utilised for comparisons.Users can enter information to try to guess the name of the holiday or ask for a tip.The predicted word is checked to see whether it matches any of the holiday names in the linked list using the **searchNode** function.Samething will happen within the other 2 classes.The score of the player is adjusted accordingly.
 
 Overall, the linked list is utilized to store and oversee the list of celebrations,food and country.
+# Screenshots of game
 
-# Link to game demo video & Screenshots of game
-
+# Link to game demo video 
