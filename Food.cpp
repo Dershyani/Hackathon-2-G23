@@ -63,6 +63,7 @@ void FoodList::foodGame(int& scores)
 {
 	string a_food[5] = { "apple","pizza","sandwich","chicken","rice" };
 	    char arr_food[10][10];
+	    int f_index = 0;
 		
 		for(int x=5; x>0; x--)
 		{
@@ -76,7 +77,6 @@ void FoodList::foodGame(int& scores)
 		        }
 		    }
 			
-			int f_index = rand()%x;
 			string output = a_food[f_index];
 		    
 		    if (a_food[f_index].length() % 2 == 0) {
@@ -140,10 +140,6 @@ void FoodList::foodGame(int& scores)
 		        cout << "Wrong guess. The correct word was: " << output << endl;
 		    }
 		    cout << endl;
-		    while(f_index<x-1)
-		    {
-		    	a_food[f_index] = a_food[f_index+1];
-		    	f_index++;
-			}
+		    f_index++;
 		}
 }
