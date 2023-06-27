@@ -59,21 +59,28 @@ Remember, in order to save the princess, you must obtain 25 or more than 25 mark
 # How object-oriented concepts were used to develop your game
 Each of the kingdom was developed using classes, which is an object-oriented concept.Here's a breakdown of how these concepts were used:
 
-Encapsulation: Within the boundaries of its scope, each class encapsulates its own data and behaviour. In order to protect data integrity and abstraction, the private member variables (ListNode* head) are shielded from external access. Access to the data can be regulated using public member functions.
+1)Encapsulation: Within the boundaries of its scope, each class encapsulates its own data and behaviour. In order to protect data integrity and abstraction, the private member variables (ListNode* head) are shielded from external access. Access to the data can be regulated using public member functions.
 
-Abstraction: Each class abstracts a particular aspect or idea associated to the game, such as celebrations, food, or countries. The user only interacts with the public interfaces that the classes' public interfaces give, therefore they are concealed from them.
+2)Abstraction: Each class abstracts a particular aspect or idea associated to the game, such as celebrations, food, or countries. The user only interacts with the public interfaces that the classes' public interfaces give, therefore they are concealed from them.
 
+3)Constructor: The head pointer is initialised and set to nullptr in each class' constructor (CelebrationList, FoodList, CountryList). When an object is formed, constructors are used to guarantee that it is properly initialised.
 
+4)Member Functions: Each class has member functions for carrying out different game-related tasks. These features consist of class-specific appendNode, searchNode, and game functions. Data manipulation and action on class objects are both done via member functions.
 
-
-
-
-
-
-
-
+These object-oriented concepts provide a structured and modular approach to develop the game, allowing for code organization, reusability, and maintainability.
 
 # How linked lists/stacks/queues play a role in your game.
+We used linked lists to develop our game.Linked list was used in "CelebrationList", "FoodList",and "CountryList" classes.The linked list is utilized in the following ways:
+
+Appending Nodes: A new celebration,food and country is added to the linked list using the appendNode function. The celebration name is added respectively to the CelebrationName,foodName and CountryName member of the newly created node, which is then appended to the end of the list.
+
+Searching Nodes: The linked list of celebration,food and country may be searched for using the searchNode function.For instance,it moves through the list, checking the input guess against each node's storage of the names of the celebrations. It returns true if a match is discovered; otherwise, it returns false.
+
+Game Implementation: The celebrationGame,foodGame and countryGame function implements a game using a linked list.To illustrate,it produces the 10x10 character array arr_celebration, which is randomly composed of lowercase letters. The names of the celebrations are then concealed inside this array. The player must determine the celebration's name after being presented with the array as a riddle by the function.
+The names of the celebrations (a_celebration) are kept distinct and utilised for comparisons.Samething will happen for the other classes.
+Users can enter information to try to guess the name of the holiday or ask for a tip.Samething will happen within the other 2 classes.The predicted word is checked to see whether it matches any of the holiday names in the linked list using the searchNode function.The score of the player is adjusted accordingly.
+
+Overall, the linked list is utilized to store and oversee the list of celebrations,food and countr.
 
 # Link to game demo video & Screenshots of game
 
