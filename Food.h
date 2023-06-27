@@ -1,5 +1,5 @@
-#ifndef FOOD_H
-#define FOOD_H
+#ifndef FOODL_H
+#define FOODL_H
 #include <iostream>
 #include <string>
 using namespace std;
