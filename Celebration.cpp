@@ -9,7 +9,7 @@ CelebrationList::CelebrationList()
 	head = nullptr;
 }
 
-void CelebrationList::appendNode(string word)
+void CelebrationList::appendNode(string word) 
 {
 	ListNode *newNode;//for a new node
 	ListNode *nodePtr;//to check if it is nullptr(it will move)
