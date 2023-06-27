@@ -1,10 +1,12 @@
 #include <iostream>
 #include <fstream>
+#include <limits>
 #include <windows.h>
 #include <string>
-#include "Food.h"
-#include "Country.h"
-#include "Celebration.h"
+#include "FoodL.h"
+#include "CountryL.h"
+#include "CelebrationL.h"
+#include "ChapterL.h"
 
 using namespace std;
 
@@ -17,18 +19,22 @@ int main()
 	FoodList f;
 	CountryList c;
 	CelebrationList cl;
+	Chapter ch;
 	int hint;
 	int scores = 0;
 	string output;
 	
 	//start game
+	ch.startGame();
 	cout << "What is your name warrior: ";
-	cin.ignore();
 	getline(cin, name);
-	cout << "Do you want to play a new game(y) or resume a game(n): ";
-	cin>>newOrResume;
+	cout << "Press any key to continue" << endl;
+	cin.ignore();
+	cout << "Do you want to play a new game or resume a game(n/r): ";
+	cin >> newOrResume;
 	
-	while(newOrResume=='y' || newOrResume=='Y')
+	
+	while(newOrResume == 'n' || newOrResume == 'N')
 	{
 		//food
 		f.appendNode("apple");
@@ -46,17 +52,18 @@ int main()
 		
 		//celebration
 		cl.appendNode("raya");
-		cl.appendNode("christmas");
-		cl.appendNode("deepavali");
-		cl.appendNode("ponggal");
-		cl.appendNode("thaipusam");
+		cl.appendNode("easter");
+		cl.appendNode("holi");
+		cl.appendNode("vesak");
+		cl.appendNode("diwali");
 		
 		//food game
+		ch.foodIntro();
 	    f.foodGame(scores);
 	    category = "food";
 	    cout << "Do you want to stop the game? (y/n): ";
 	    cin >> stop;
-	    if(stop=='Y' || stop=='y')
+	    if(stop=='y' || stop=='Y')
 	    {
 	    	of.open("text.txt", ios::app);
 	    	of << name << endl;
@@ -66,14 +73,15 @@ int main()
 	    	of.close();
 	    	break;	    	
 		}
-		else if(stop=='N' || stop=='n')
+		else if(stop=='n' || stop=='N')
 		{
 			//country game
+			ch.countryIntro();
 		    c.countryGame(scores);
 		    category = "country";
 		    cout << "Do you want to stop the game? (y/n): ";
 		    cin >> stop;
-		    if(stop=='Y' || stop=='y')
+		    if(stop=='y' || stop=='Y')
 		    {
 		    	of.open("text.txt", ios::app);
 		    	of << name << endl;
@@ -83,14 +91,15 @@ int main()
 		    	of.close();
 		    	break;	    	
 			}
-			else if (stop=='N' || stop=='n')
+			else if (stop=='n' || stop=='N')
 			{
 				//celebration game
+				ch.celebrationIntro();
 		    	cl.celebrationGame(scores);	
 		    	category = "celebration";
-		    	cout << "Do you want to stop the game? (y/n): ";
+		    	cout << "Do you want to stop the game? (yes/no): ";
 			    cin >> stop;
-			    if(stop=='Y' || stop=='y')
+			    if(stop=='y' || stop=='Y')
 			    {
 			    	of.open("text.txt", ios::app);
 			    	of << name << endl;
@@ -100,8 +109,17 @@ int main()
 			    	of.close();
 			    	break;	    	
 				}
-				else if (stop=='N' || stop=='n')
+				else if (stop=='n' || stop=='N')
 				{
+					cout << "Your total score is: " << scores << endl;
+					if (scores>=25)
+					{
+						ch.winGame();
+					}
+					else
+					{
+						ch.loseGame();
+					}
 					break;
 				}
 				else
@@ -124,7 +142,7 @@ int main()
 	}
 	
 	//resume game
-	while(newOrResume=='n' || newOrResume=='N')
+	while(newOrResume=='r' || newOrResume=='R')
 	{
 		cout << "Enter your previous category(food, country, celebration): ";
 		cin >> category;
@@ -145,11 +163,12 @@ int main()
 						cout << "Scores: " << line << endl;
 						cout << "Your next kingdom is Country" << endl;
 						//country game
+						ch.countryIntro();
 					    c.countryGame(scores);
 					    string category = "country";
 					    cout << "Do you want to stop the game? (y/n): ";
 					    cin >> stop;
-					    if(stop=='Y' || stop=='y')
+					    if(stop=='y' || stop=='Y')
 					    {
 					    	of.open("text.txt", ios::app);
 					    	of << name << endl;
@@ -159,14 +178,15 @@ int main()
 					    	of.close();
 					    	break;	    	
 						}
-						else if (stop=='N' || stop=='n')
+						else if (stop=='n' || stop=='N')
 						{
 							//celebration game
+							ch.celebrationIntro();
 					    	cl.celebrationGame(scores);	
 					    	string category = "celebration";
 					    	cout << "Do you want to stop the game? (y/n): ";
 						    cin >> stop;
-						    if(stop=='Y' || stop=='y')
+						    if(stop=='y' || stop=='Y')
 						    {
 						    	of.open("text.txt", ios::app);
 						    	of << name << endl;
@@ -176,7 +196,7 @@ int main()
 						    	of.close();
 						    	break;	    	
 							}
-							else if (stop=='N' || stop=='n')
+							else if (stop=='n' || stop=='N')
 							{
 								break;
 							}
@@ -213,12 +233,14 @@ int main()
 						getline(F,line);
 						cout << "Scores: " << line << endl;
 						cout << "Your next kingdom is Celebration" << endl;
+						
 						//celebration game
+						ch.celebrationIntro();
 					    cl.celebrationGame(scores);	
 					    string category = "celebration";
 					    cout << "Do you want to stop the game? (y/n): ";
 						cin >> stop;
-						if(stop=='Y' || stop=='y')
+						if(stop=='y' || stop=='Y')
 						{
 						of.open("text.txt", ios::app);
 						of << name << endl;
@@ -228,8 +250,17 @@ int main()
 						of.close();
 						break;	    	
 						}
-						else if (stop=='N' || stop=='n')
+						else if (stop=='n' || stop=='N')
 						{
+							cout << "Your total score is: " << scores << endl;
+							if (scores>=25)
+							{
+								ch.winGame();
+							}
+							else
+							{
+								ch.loseGame();
+							}
 							break;
 						}
 						else
@@ -257,6 +288,15 @@ int main()
 						cout << "Category: " << line << endl;
 						getline(F,line);
 						cout << "Scores: " << line << endl;
+						cout << "Your total score is: " << scores << endl;
+						if (scores>=25)
+						{
+							ch.winGame();
+						}
+						else
+						{
+							ch.loseGame();
+						}
 					}
 				}
 			}
@@ -268,18 +308,6 @@ int main()
 			break;
 		}			
 	}
-	cout << "Your total score is: " << scores << endl;
 	
-	if (scores>=25)
-	{
-		cout << "You have scored enough to save the princess!! Congratulations " << name << ", you're a true warrior!" << endl;
-		cout << "The doors to the tower is now opened." << endl;
-		cout << "Go back with the princess and have a good rest champ!" << endl;;
-	}
-	else
-	{
-		cout << "OH NOO!!! You score is insufficient to save the princess." << endl;
-		cout << "The doors to the tower is now locked. You need to leave without the princess." << endl;
-	}
 	return 0;
 }
