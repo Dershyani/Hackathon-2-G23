@@ -18,7 +18,11 @@ There are many features contain in the game that we created:
 
 6. Data Structure: The game utilizes linked lists to store and manage words for each category. Each category (Food, Country, Celebration) has its own linked list to store the words.
 
-7. User Interaction: The game prompts the user for input using the `cin` statement and displays information using the `cout` statement. The player can start a new game by entering 'n' or 'N' and exit the game by entering any other character.
+7. User Interaction: The game prompts the user for input using the `cin` statement and displays information using the `cout` statement. The player can start a new game by entering 'n' or 'N' or resume the game by entering 'r' or 'R'.
+
+8. Progress Saving: The player has the option to stop and save the progress of the game. When the player chooses to stop the game, their name, category, and score are saved to a text file ("text.txt") for future resuming.
+
+9. Win or Lose: After completing all the category games, the player's total score is displayed. If the player's score is 25 or higher, a message indicating that the player won the game is shown. Otherwise, a message indicating that the player lost the game is displayed.
 
 Overall, the game provides an interactive and challenging word puzzle experience, allowing the player to test their knowledge of food, countries, and celebrations while earning points for correct guesses.
 
