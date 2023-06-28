@@ -80,5 +80,7 @@ We used linked lists to develop our game.Linked list was used in **"CelebrationL
 
 Overall, the linked list is utilized to store and oversee the list of celebrations,food and country.
 # Screenshots of game
+<img width="634" alt="image" src="https://github.com/Dershyani/Hackathon-2-G23/assets/121543711/dd6dec6d-ca77-415a-a5b5-cfe6cae7338e">
+
 
 # Link to game demo video 
