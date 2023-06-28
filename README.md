@@ -34,7 +34,7 @@ Overall, the game provides an interactive and challenging word puzzle experience
 
 3. First will be the kingdom of Food. A 10x10 grid of letters will appear on the screen, representing the word search for this kingdom.
 
-5. Your task is to find specific words hidden within the word search grid. The words will be related to food. For example, you may find words like "apples," "pizza," and "rice."
+5. Your task is to find specific words hidden within the word search grid. The words will be related to food. For example, you may find words like "apple," "pizza," and "rice."
 
 6. The puzzle grid is presented and you will have options to choose between two actions:
 Enter 1: Guess the word directly. Enter the word you think is hidden within the grid and press Enter.
