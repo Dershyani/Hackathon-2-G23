@@ -88,6 +88,10 @@ Overall, the linked list is utilized to store and oversee the list of celebratio
 <img width="949" alt="image" src="https://github.com/Dershyani/Hackathon-2-G23/assets/121543711/a67033e5-467f-4dfd-bfc8-12d2ee2ceebf">
 <img width="949" alt="image" src="https://github.com/Dershyani/Hackathon-2-G23/assets/121543711/4126154f-b979-4e7a-ab75-bbcacf5126b7">
 <img width="948" alt="image" src="https://github.com/Dershyani/Hackathon-2-G23/assets/121543711/3cdd36f8-1f1d-490c-b209-d1bf74cba509">
+<img width="947" alt="image" src="https://github.com/Dershyani/Hackathon-2-G23/assets/121543711/9146a6a9-1574-4f9a-82b7-c8fb41c69b2f">
+<img width="948" alt="image" src="https://github.com/Dershyani/Hackathon-2-G23/assets/121543711/1083cc8f-8f60-41f0-8fa6-6548e3235d3f">
+<img width="949" alt="image" src="https://github.com/Dershyani/Hackathon-2-G23/assets/121543711/c16cedc9-0f98-49eb-9fe2-19cb42bf7402">
+
 
 
 
