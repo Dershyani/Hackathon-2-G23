@@ -1,4 +1,6 @@
 #include "Celebration.h"
+#include <algorithm>
+#include <cctype>
 #include <windows.h>
 #include <iostream>
 
@@ -133,15 +135,25 @@ void CelebrationList::celebrationGame(int& scores) //return scores
 		    }
 		
 		    cout << endl;
-		    if (searchNode(guess)) 
-			{
+		    if (searchNode(guess)) {
+		    // Convert the guessed word and the correct word to lowercase for comparison
+		    string lowercaseGuess = guess;
+		    string lowercaseOutput = output;
+		    transform(lowercaseGuess.begin(), lowercaseGuess.end(), lowercaseGuess.begin(), [](unsigned char c) { return tolower(c); });
+		    transform(lowercaseOutput.begin(), lowercaseOutput.end(), lowercaseOutput.begin(), [](unsigned char c) { return tolower(c); });
+		
+		    if (lowercaseGuess == lowercaseOutput) {
 		        cout << "Congratulations! You have guessed the correct word." << endl;
 		        scores += 2;
-		    }
-		    else {
+		    } 
+				else {
 		        cout << "Wrong guess. The correct word was: " << output << endl;
-		    }
-		    cout << endl;
+		    	}
+			} 	
+			else {
+		    cout << "Wrong guess. The correct word was: " << output << endl;
+			}
+			cout << endl;
 		    cl_index++;
 		}		
 }
