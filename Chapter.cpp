@@ -84,6 +84,15 @@ void Chapter::countryIntro()
 	cout << "Now your job is to find all 5 countries that are hidden in each word search. You can do this warrior!!" << endl;
 	cout << "Well, you can start finding the first word by clicking on any keys warrior" << endl;
 	cout << "**********************************************************************************************\n" << endl;
+	
+	cout << "**********************************************************************************************\n" << endl;
+	cout << "What are you doing warrior? NOOO NOOOO NOOOO!! DON'T TOUCH THAT!!" << endl;
+	cout << "*****************************************WORD SEARCH CHANGES**********************************\n" << endl;
+	cout << "OHH NOOOOO!!! Be careful warrior!!!" << endl;
+	cout << "What have you done?!! I told you to be very careful." << endl;
+	cout << "Oh myyy.. You have caused damage to the word search. Your score will be deducted because of this." << endl;
+	cout << "Be careful next time warrior.. Remember that the scores are very important to save the princess!!" << endl;
+	cout << "**********************************************************************************************\n" << endl;
 	getch();
 }
 
