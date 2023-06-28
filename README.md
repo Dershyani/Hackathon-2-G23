@@ -74,7 +74,7 @@ Each of the kingdom was developed using classes, which is an object-oriented con
 These object-oriented concepts provide a structured and modular approach to develop the game, allowing for code organization, reusability, and maintainability.
 
 # How linked lists/stacks/queues play a role in your game.
-We used linked lists to develop our game.Linked list was used in **"CelebrationList", "FoodList",and "CountryList"** classes.The linked list is utilized in the following ways:
+We used linked lists to develop our game. Linked list was used in **"CelebrationList", "FoodList",and "CountryList"** classes.The linked list is utilized in the following ways:
 
 1)Appending Nodes: A new celebration,food and country is added to the linked list using the appendNode function. The celebration name is added respectively to the **CelebrationName**,**foodName** and **CountryName** member of the newly created node, which is then appended to the end of the list.
 
