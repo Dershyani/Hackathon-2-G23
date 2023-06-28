@@ -61,7 +61,7 @@ Each of the kingdom was developed using classes, which is an object-oriented con
 
 1)Encapsulation: Within the boundaries of its scope, each class encapsulates its own data and behaviour. In order to protect data integrity and abstraction, the private member variables (ListNode* head) are shielded from external access. Access to the data can be regulated using public member functions.
 
-2)Abstraction: Each class abstracts a particular aspect or idea associated to the game, such as celebrations, food, countries or chapter. The user only interacts with the public interfaces that the classes' public interfaces give, therefore they are concealed from them.
+2)Abstraction: Each class abstracts a particular aspect or idea associated to the game, such as celebrations, food, countries and chapter. The user only interacts with the public interfaces that the classes' public interfaces give, therefore they are concealed from them.
 
 3)Constructor: The head pointer is initialised and set to nullptr in each class' constructor **(CelebrationList, FoodList, CountryList)**. When an object is formed, constructors are used to guarantee that it is properly initialised.
 
