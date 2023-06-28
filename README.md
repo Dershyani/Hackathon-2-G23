@@ -40,7 +40,7 @@ Overall, the game provides an interactive and challenging word puzzle experience
 Enter 1: Guess the word directly. Enter the word you think is hidden within the grid and press Enter.
 Enter 2: Get a hint first. The game will provide a hint by providing information about the size of the hidden word.
 
-7. If you guess the word correctly, a congratulatory message is displayed, and the you can earn 2 points. Otherwise, an incorrect message is shown, and the correct word is revealed. No points are given. You can gain maximum 10 points for each kingdom.
+7. If you guess the word correctly, a congratulatory message is displayed, and you can earn 2 points. Otherwise, an incorrect message is shown, and the correct word is revealed. No points are given. You can gain maximum 10 points for each kingdom.
 
 8. Repeat steps 3-7 for a total of five word searches in the Kingdom of Food. 
 
