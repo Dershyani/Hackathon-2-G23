@@ -3,10 +3,10 @@
 #include <limits>
 #include <windows.h>
 #include <string>
-#include "FoodL.h"
-#include "CountryL.h"
-#include "CelebrationL.h"
-#include "ChapterL.h"
+#include "Food.h"
+#include "Country.h"
+#include "Celebration.h"
+#include "Chapter.h"
 
 using namespace std;
 
