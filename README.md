@@ -42,7 +42,7 @@ Enter 2: Get a hint first. The game will provide a hint by providing information
 
 7. If you guess the word correctly, a congratulatory message is displayed, and you can earn 2 points. Otherwise, an incorrect message is shown, and the correct word is revealed. No points are given. You can gain maximum 10 points for each kingdom.
 
-8. Repeat steps 3-7 for a total of five word searches in the Kingdom of Food. 
+8. Repeat steps 3-6 for a total of five word searches in the Kingdom of Food. 
 
 9. Once you guessed all five words in the Kingdom of Food, no matter your guesses are correct or not, you will automatically proceed to the next kingdom, which is the Kingdom of Country.
 
