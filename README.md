@@ -48,13 +48,13 @@ Enter 2: Get a hint first. The game will provide a hint by providing information
 
 10. The gameplay in the Kingdom of Country is similar to the previous kingdom. A new 10x10 grid of letters will appear on the screen, and you need to find five words related to the country theme.
 
-11. Repeat steps 3-7 for a total of five word searches in the Kingdom of Country. Guess all five words to advance to the final kingdom which will be the Kingdom of Celebration.
+11. Repeat steps 3-6 for a total of five word searches in the Kingdom of Country. Guess all five words to advance to the final kingdom which will be the Kingdom of Celebration.
 
 12. After completing the Kingdom of Country, you will move on to the Kingdom of Celebrations.
 
 13. The Kingdom of Celebrations will present you with another set of five word searches, this time with a celebration theme. Again, try to find and guess the words.
 
-14. Repeat steps 3-7 once again for all the word searches in the Kingdom of Celebrations.
+14. Repeat steps 3-6 once again for all the word searches in the Kingdom of Celebrations.
 
 15. Once you have guessed all five words in the Kingdom of Celebrations, your total marks will be revealed.
 
